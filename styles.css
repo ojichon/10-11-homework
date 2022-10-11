@@ -1,0 +1,68 @@
+body {
+    background-color:#b8d3af ;
+}
+
+.blackRowTop {
+    background-color: black;
+    display: grid;
+    position: fixed;
+    height: 35px;
+    left: 0;
+    top: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.mainArea {
+    background-color: black;
+    margin: 55px;
+    margin-top: 75px;
+    height: 500px;
+    width: 1650px;
+    position: relative;
+    top: 10px;
+
+}
+
+.bricks{
+    display:grid;
+    position: relative;
+    top: 50px;
+}
+
+.red, .yellow, .green, .blue{
+    display: grid;
+    grid-template-rows:auto;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.red>div, .yellow>div, .green>div, .blue>div {
+    margin: px;
+    height: 20px;
+    border-radius: 5px;
+    border: outset 1px rgb(119, 119, 119);
+}
+
+.red>div {
+    background-color: red;
+}
+
+.green>div {
+    background-color: green;
+}
+
+.blue>div {
+    background-color: blue;
+}
+
+.yellow>div {
+    background-color: yellow;
+}
+
+.yellow>div:nth-child(3),
+.yellow>div:nth-child(4),
+.yellow>div:nth-child(9),
+.yellow>div:nth-child(10){
+    background-color:black;
+    border:0px;
+}
